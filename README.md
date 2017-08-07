@@ -1,23 +1,47 @@
-#Setup instructions
+# Setup instructions
 
-##Linux 
-####Installing Redis
+## Linux 
+#### Installing Redis
 ----------------
-_sudo apt-get update_
+> sudo apt-get update_
 
-_sudo apt-get install build-essential_
+> sudo apt-get install build-essential
 
-_sudo apt-get install tcl8.6_
+>sudo apt-get install tcl8.6
 
-_wget http://download.redis.io/releases/redis-stable.tar.gz_
+> wget http://download.redis.io/releases/redis-stable.tar.gz
 
-_tar xzf redis-stable.tar.gz_
+> tar xzf redis-stable.tar.gz
 
-_cd redis-stable_
+> cd redis-stable
 
-_make_
+> make
 
-_make test_
+> make test
 
-_sudo make install_
+> sudo make install
+
+> cd utils
+
+> sudo ./install_server.sh
+
+
+#### Selected config:
+* Port           : 6379
+* Config file    : /etc/redis/6379.conf
+* Log file       : /var/log/redis_6379.log
+* Data dir       : /var/lib/redis/6379
+* Executable     : /usr/local/bin/redis-server
+* Cli Executable : /usr/local/bin/redis-cli
+
+if you get this
+> Mmmmm... the default config is missing. Did you switch to the utils directory?
+
+then do
+> cd ..
+> cp redis.conf /etc/redis/redis.conf
+> cp redis.conf /usr/local/etc/redis.conf
+
+or start the redis server by
+> /usr/local/etc/redi-server /usr/local/etc/redis.conf
 
