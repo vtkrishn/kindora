@@ -40,7 +40,9 @@ if you get this
 
 then do
 > cd ..
+
 > cp redis.conf /etc/redis/redis.conf
+
 > cp redis.conf /usr/local/etc/redis.conf
 
 or start the redis server by
@@ -49,35 +51,45 @@ This will start the server
 
 to connect to the client
 > /usr/local/bin/redis-cli
+
 > 127.0.0.1:6379> set vinod hi
+
 > OK
+
 > 127.0.0.1:6379> get vinod
+
 > "hi"
 
 
 #### Installing node
 -------------------
 > sudo apt-get install software-properties-common
+
 > curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
 > sudo apt-get install nodejs
 
 > node -v
+
 > v6.11.2
 
 > npm -v
+
 > 3.10.10
 
 go to /usr/lib/node_modules to see the installed packages
 
 > sudo npm install -g generator-angular
+
 > sudo npm install redis
+
 > sudo npm install express-generator
 
 from the kindora folder run, your redis server should be running, you will see 
 > node app.js
 
 > connected
+
 > hi
 
 
