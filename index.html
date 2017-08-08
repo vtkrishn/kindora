@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<!-- KINDORA -->
+
+<html ng-app="app" lang="en">
+<head>
+  <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <title>Kindora</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="author" content="Kindora">
+    <meta name="description" content="Kindora">
+  	<meta name="keywords" content="school, teacher">
+    <!-- external style links  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-content/app.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Scripts -->
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-route.min.js"></script>
+    <script src="//code.angularjs.org/1.6.0/angular-cookies.min.js"></script>
+</body>
+</html>
