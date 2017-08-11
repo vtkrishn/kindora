@@ -1,3 +1,28 @@
+DB to be used redis
+https://redis.io/
+
+Runtime
+Nodejs
+https://nodejs.org/en/
+
+
+UI Angular
+https://angularjs.org/
+
+Versioning
+https://github.com/vtkrishn/kindora.git
+
+IDE
+https://codeanywhere.com
+
+
+server running under
+http://port-1024.testing-vinsinin567516.codeanyapp.com/
+
+
+login page
+http://port-1024.testing-vinsinin567516.codeanyapp.com/kindora/#!/login
+
 # Setup instructions
 
 ## Linux 
