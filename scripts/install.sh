@@ -73,3 +73,18 @@ cd  /usr/lib/node_modules
 sudo npm install -g generator-angular
 sudo npm install redis
 sudo npm install express-generator
+
+echo " -------------------- Installing mysql --------------------"
+hostname -f
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
+
+sudo apt-get -y install zsh htop
+
+sudo apt-get install mysql-server-5.6
+password - root/[kindora@123]
+echo " -------------------- Installing mongodb --------------------"
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get autoremove
+sudo apt-get -y install mongodb
